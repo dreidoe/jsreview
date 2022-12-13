@@ -11,3 +11,14 @@ console.log(peopleNames);
 
 const greetings = people.map((person) => `${person.salutation}${person.name}`);
 console.log(greetings);
+
+function createBioCard(person) {
+  return `
+    <p>${person.salutation} ${person.name} is ${person.age} years old.</p>
+  `;
+}
+const firstBioCard = createBioCard(people[0]);
+console.log(firstBioCard);
+
+const biocardHTML = people.map(createBioCard).join("\n");
+console.log(biocardHTML);
