@@ -1,4 +1,4 @@
-import people from "./user.js";
+import people from "./users.js";
 console.log(people);
 
 const result = people.filter((people) => people.age > 27);
@@ -17,6 +17,7 @@ function createBioCard(person) {
     <p>${person.salutation} ${person.name} is ${person.age} years old.</p>
   `;
 }
+
 const firstBioCard = createBioCard(people[0]);
 console.log(firstBioCard);
 
