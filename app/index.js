@@ -2,7 +2,7 @@ import bios from "./users.js";
 
 function createBioCard(bio) {
   return `
-    <p>${bio.name} <br>${bio.username} <br> ${bio.email}<br> from ${bio.city}<br> ${bio.phone} <br> ${bio.catchPhrase}  </p>
+    <p>${bio.name} ${bio.username} ${bio.email} from ${bio.address.city}<br> ${bio.phone}  ${bio.company.catchPhrase}  </p>
   `;
 }
 
